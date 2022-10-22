@@ -16,12 +16,16 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const StyledLink = styled(Link)`
-      color: white;
+      color: black;
       text-decoration: none;
+      font-weight: 500;
       margin: 1rem;
       position: relative;
-      &:hover, &:focus {
-        color: yellow;
+      &:hover {
+        color: white;
+      }
+      &:focus {
+        color: white;
       }
       &:active {
         color: red;

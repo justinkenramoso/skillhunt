@@ -6,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import styled from 'styled-components';
-import PortfolioList from './PortfolioList'
+import {PortfolioList} from '../data/DataList'
 
 
 const CardStyle = styled(Card)`
