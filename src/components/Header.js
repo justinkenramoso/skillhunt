@@ -1,39 +1,39 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import MenuIcon from '@mui/icons-material/Menu';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import { Link } from 'react-router-dom'
-import styled from 'styled-components'
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Divider from "@mui/material/Divider";
+import Drawer from "@mui/material/Drawer";
+import IconButton from "@mui/material/IconButton";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
+import MenuIcon from "@mui/icons-material/Menu";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 const StyledLink = styled(Link)`
-      color: black;
-      text-decoration: none;
-      font-weight: 500;
-      margin: 1rem;
-      position: relative;
-      &:hover {
-        color: white;
-      }
-      &:focus {
-        color: white;
-      }
-      &:active {
-        color: red;
-      }
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 1rem;
+  position: relative;
+  &:hover {
+    color: white;
+  }
+  &:focus {
+    color: white;
+  }
+  &:active {
+    color: red;
+  }
 `;
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact', 'Activity'];
+const navItems = ["Home", "About", "Contact", "Activity"];
 
 export default function Header(props: Props) {
   const { window } = props;
@@ -44,7 +44,7 @@ export default function Header(props: Props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
         MUI
       </Typography>
@@ -52,7 +52,7 @@ export default function Header(props: Props) {
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
+            <ListItemButton sx={{ textAlign: "center" }}>
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
@@ -61,10 +61,11 @@ export default function Header(props: Props) {
     </Box>
   );
 
-  const container = window !== undefined ? () => window().document.body : undefined;
+  const container =
+    window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: "flex", height: "8vh" }}>
       <AppBar component="nav">
         <Toolbar>
           <IconButton
@@ -72,24 +73,24 @@ export default function Header(props: Props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 2, display: { sm: "none" } }}
           >
             <MenuIcon />
           </IconButton>
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
             JOB SEARCH
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <List>
-              <StyledLink to= '/'>Home  </StyledLink>
-              <StyledLink to= '/company'>Company Profile</StyledLink>
-              <StyledLink to= '/contactUs'>Contact Us</StyledLink>
-              <StyledLink to= '/logIn'>LOG IN</StyledLink>
-              <StyledLink to= '/register'>REGISTER</StyledLink>
+              <StyledLink to="/">Home </StyledLink>
+              <StyledLink to="/company">Company Profile</StyledLink>
+              <StyledLink to="/contactUs">Contact Us</StyledLink>
+              <StyledLink to="/logIn">LOG IN</StyledLink>
+              <StyledLink to="/register">REGISTER</StyledLink>
             </List>
           </Box>
         </Toolbar>
@@ -104,8 +105,11 @@ export default function Header(props: Props) {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            display: { xs: "block", sm: "none" },
+            "& .MuiDrawer-paper": {
+              boxSizing: "border-box",
+              width: drawerWidth,
+            },
           }}
         >
           {drawer}
@@ -113,8 +117,7 @@ export default function Header(props: Props) {
       </Box>
       <Box component="main" sx={{ p: 3 }}>
         <Toolbar />
-        <Typography>
-        </Typography>
+        <Typography></Typography>
       </Box>
     </Box>
   );

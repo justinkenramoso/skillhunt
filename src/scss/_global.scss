@@ -1,0 +1,37 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.pageContent {
+  padding-top: 5vh;
+}
+.fullHeight {
+  min-height: 100%;
+}
+
+.color1 {
+  color: $color1;
+}
+.color2 {
+  color: $color2;
+}
+.color3 {
+  color: $color3;
+}
+.color4 {
+  color: $color4;
+}
+.bg1 {
+  background-color: $color1;
+}
+.bg2 {
+  background-color: $color2;
+}
+.bg3 {
+  background-color: $color3;
+}
+.bg4 {
+  background-color: $color4;
+}

@@ -1,0 +1,50 @@
+@import "variables";
+
+.home1 {
+  min-height: 92vh;
+  background-color: $color2;
+  color: $color4;
+}
+.intromsg-div {
+  width: 60%;
+  margin: auto;
+}
+.intromsg {
+  font-size: 2.7rem;
+}
+.team {
+  width: 85%;
+}
+.home2 {
+  min-height: 100vh;
+  background-color: $color4;
+  color: $color2;
+}
+.intromsg2-div {
+  width: 60%;
+}
+.build,
+.teach {
+  width: 50%;
+}
+.whyUs {
+  text-align: center;
+  padding: 8px;
+  background-color: $color1;
+  color: $color4;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .intromsg-div {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .intromsg {
+    font-size: 25px;
+  }
+  .team {
+    width: 100%;
+  }
+}
