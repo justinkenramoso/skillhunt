@@ -1,3 +1,15 @@
+.title {
+  font-size: 2rem;
+  color: white;
+}
+
+footer {
+  padding: 25px;
+  height: 15vh;
+  background-color: #3c4048;
+  color: #eaeaea;
+}
+
 .home1 {
   min-height: 92vh;
   background-color: #3c4048;
@@ -53,12 +65,18 @@
     width: 100%;
   }
 }
+.login {
+  min-height: 90vh;
+  background-color: #eaeaea;
+  padding-top: 50px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
-.pageContent {
+.top-padding {
   padding-top: 5vh;
 }
 
@@ -96,4 +114,26 @@
 
 .bg4 {
   background-color: #eaeaea;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #00abb3 #eaeaea;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #eaeaea;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #00abb3;
+  border-radius: 0px;
+  border: 0px solid #ffffff;
 }/*# sourceMappingURL=main.css.map */

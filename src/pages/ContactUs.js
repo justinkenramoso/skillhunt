@@ -1,12 +1,12 @@
-import React from 'react'
-import Portfolio from './Portfolio'
+import React from "react";
+import Portfolio from "./Portfolio";
 
 function ContactUs() {
   return (
-    <div>
-      <Portfolio/>
+    <div className="py-5">
+      <Portfolio />
     </div>
-  )
+  );
 }
 
-export default ContactUs
+export default ContactUs;

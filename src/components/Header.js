@@ -27,15 +27,20 @@ const StyledLink = styled(Link)`
   &:focus {
     color: white;
   }
-  &:active {
-    color: red;
+`;
+
+const StyledLink2 = styled(Link)`
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  &:hover {
+    color: black;
   }
 `;
 
 const drawerWidth = 240;
-const navItems = ["Home", "About", "Contact", "Activity"];
 
-export default function Header(props: Props) {
+export default function Header(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -46,17 +51,35 @@ export default function Header(props: Props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+        SKILL HUNT
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+        <ListItem>
+          <ListItemButton>
+            <StyledLink2 to="/">HOME</StyledLink2>
+          </ListItemButton>
+        </ListItem>
+        <ListItem>
+          <ListItemButton>
+            <StyledLink2 to="/company">COMPANY PROFILE</StyledLink2>
+          </ListItemButton>
+        </ListItem>
+        <ListItem>
+          <ListItemButton>
+            <StyledLink2 to="/contactUs">CONTACT US</StyledLink2>
+          </ListItemButton>
+        </ListItem>
+        <ListItem>
+          <ListItemButton>
+            <StyledLink2 to="/logIn">LOG IN</StyledLink2>
+          </ListItemButton>
+        </ListItem>
+        <ListItem>
+          <ListItemButton>
+            <StyledLink2 to="/register">REGISTER</StyledLink2>
+          </ListItemButton>
+        </ListItem>
       </List>
     </Box>
   );
@@ -77,18 +100,14 @@ export default function Header(props: Props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-          >
-            JOB SEARCH
-          </Typography>
+          <div className="d-flex flex-grow-1 align-items-center">
+            <h6 className="title">// SKILLHUNT</h6>
+          </div>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <List>
-              <StyledLink to="/">Home </StyledLink>
-              <StyledLink to="/company">Company Profile</StyledLink>
-              <StyledLink to="/contactUs">Contact Us</StyledLink>
+              <StyledLink to="/">HOME</StyledLink>
+              <StyledLink to="/company">COMPANY PROFILE</StyledLink>
+              <StyledLink to="/contactUs">CONTACT US</StyledLink>
               <StyledLink to="/logIn">LOG IN</StyledLink>
               <StyledLink to="/register">REGISTER</StyledLink>
             </List>

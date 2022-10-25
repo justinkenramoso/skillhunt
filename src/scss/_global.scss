@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
 }
-.pageContent {
+.top-padding {
   padding-top: 5vh;
 }
 .fullHeight {
@@ -34,4 +34,26 @@
 }
 .bg4 {
   background-color: $color4;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #00abb3 #eaeaea;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #eaeaea;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #00abb3;
+  border-radius: 0px;
+  border: 0px solid #ffffff;
 }

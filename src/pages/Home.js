@@ -42,7 +42,7 @@ function Home() {
             </div>
             <div className="col-lg-6">
               <div className="intromsg2-div">
-                <h2 className="whyUs">Why Us?</h2>
+                <h2 className="whyUs">Why SkillHunt?</h2>
                 <h4 className="text-center mt-lg-4">
                   We make sure our candidates are well-trained and are ready to
                   help you build your desired software.
