@@ -1,0 +1,36 @@
+@import "variables";
+
+#talent {
+  min-height: 92vh;
+
+  #talent-row {
+    margin: 0;
+
+    #sidebar-specs {
+      background-color: $color3;
+    }
+    #portfolios {
+      height: 100%;
+      background-color: $color4;
+
+      #portfolios-header-div {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+
+        #portfolios-header-text {
+          font-weight: 700;
+          color: $color2;
+          font-size: 3rem;
+          text-decoration: underline;
+        }
+      }
+      #portfolio-cards {
+        padding: 50px;
+      }
+    }
+    #sidebar-filler {
+      background-color: $color3;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import "variables";
+
+.portfolio-card {
+  border: 1px solid $color1;
+  border-radius: 15px;
+  box-shadow: -9px 13px 28px -6px rgba(0, 0, 0, 0.44);
+  -webkit-box-shadow: -9px 13px 28px -6px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: -9px 13px 28px -6px rgba(0, 0, 0, 0.44);
+}
+.portfolio-avatar {
+  width: 150px;
+}

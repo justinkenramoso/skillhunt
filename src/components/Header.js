@@ -96,20 +96,21 @@ export default function Header(props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
+            sx={{ mr: 2, display: { xs: "block", sm: "block", md: "none" } }}
           >
             <MenuIcon />
           </IconButton>
           <div className="d-flex flex-grow-1 align-items-center">
             <h6 className="title">// SKILLHUNT</h6>
           </div>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+          <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
             <List>
               <StyledLink to="/">HOME</StyledLink>
-              <StyledLink to="/company">COMPANY PROFILE</StyledLink>
+              <StyledLink to="/talent">TALENT POOL</StyledLink>
+              <StyledLink to="/careers">CAREERS</StyledLink>
+              <StyledLink to="/company">ABOUT US</StyledLink>
               <StyledLink to="/contactUs">CONTACT US</StyledLink>
               <StyledLink to="/logIn">LOG IN</StyledLink>
-              <StyledLink to="/register">REGISTER</StyledLink>
             </List>
           </Box>
         </Toolbar>
@@ -124,7 +125,7 @@ export default function Header(props) {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: "block", sm: "none" },
+            display: { xs: "block", sm: "block", md: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
