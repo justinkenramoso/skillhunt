@@ -18,25 +18,38 @@ function Home() {
       <div id="home-landing" style={{ backgroundImage: `url(${devTeam})` }}>
         <div id="landing-div">
           <h3 id="landing-text">
-            Building an excellent <br /> development team <br />
+            Building an <span className="color1">excellent</span> <br />{" "}
+            development team <br />
             has never been easier.
           </h3>
           <br />
           <div id="landing-subtext">
             <h5>
               <span className="color1">SkillHunt</span> has been around for 12
-              years, <br /> constantly delivering{" "}
+              years, <br /> constantly delivering{"  "}
               <span className="color1">
                 game-changing <br />
-                Web Development solutions.
               </span>
+              Web Development solutions.
             </h5>
-            <div className="mt-3 d-flex justify-content-between">
+            <div className="mt-3 d-flex justify-content-between flex-column flex-md-row">
               <Link to="/talent">
-                <Button variant="contained">hire from our talents</Button>
+                <Button
+                  variant="contained"
+                  fullWidth
+                  sx={{ marginBottom: "10px" }}
+                >
+                  hire from our talents
+                </Button>
               </Link>
               <Link to="/careers">
-                <Button variant="outlined">get hired</Button>
+                <Button
+                  variant="outlined"
+                  fullWidth
+                  sx={{ marginBottom: "10px" }}
+                >
+                  get hired
+                </Button>
               </Link>
             </div>
           </div>
@@ -44,6 +57,11 @@ function Home() {
       </div>
       {/* Section A-----------------------------------------------> */}
       <div id="section-a" style={{ backgroundImage: `url(${bg})` }}>
+        <div id="section-a-header">
+          <h2>
+            WHY <span className="color1">SKILLHUNT</span> ?
+          </h2>
+        </div>
         <div className="row w-100 m-0">
           {/* Trained Professionals-------------- */}
           <div className="col-md-6 order-md-0">
@@ -53,7 +71,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="col-md-6 centered-flex p-5 order-md-1 ps-md-0">
+          <div className="col-md-6 centered-flex px-md-5 py-3 order-md-1 ps-md-0">
             <div className="section-a-card m-lg-5">
               <h2>
                 Trained <span className="color1">Professionals</span>
@@ -79,7 +97,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="col-md-6 centered-flex p-5 order-md-2 pe-md-0">
+          <div className="col-md-6 centered-flex px-md-5 py-3 order-md-2 pe-md-0">
             <div className="section-a-card m-lg-5">
               <h2>
                 <span className="color1">Modern</span> Development Strategies
@@ -105,7 +123,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="col-md-6 centered-flex p-5 order-md-5 ps-md-0">
+          <div className="col-md-6 centered-flex px-md-5 py-3 order-md-5 ps-md-0">
             <div className="section-a-card m-lg-5">
               <h2>
                 Industry-<span className="color1">Standard</span>

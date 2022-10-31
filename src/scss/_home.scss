@@ -7,10 +7,10 @@
   padding: 50px;
 
   #landing-text {
-    font-weight: 700;
     color: white;
     font-size: 3rem;
     text-shadow: -2px 0px 13px rgba(0, 0, 0, 1);
+    font-family: $alfa;
   }
   #landing-subtext {
     display: inline-block;
@@ -31,12 +31,38 @@
 @media screen and (max-width: 767px) {
   #home-landing {
     padding: 20px;
+    text-align: center;
+
+    #landing-div {
+      #landing-text {
+        font-size: 2rem;
+      }
+    }
   }
 }
 
 #section-a {
   min-height: 100vh;
-  border-top: 10px solid black;
+  padding-top: 50px;
+
+  #section-a-header {
+    padding-top: 50px;
+    margin-bottom: 50px;
+    height: 10vh;
+    text-align: center;
+    color: $color4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $alfa;
+
+    h2 {
+      padding: 15px 50px;
+      border-radius: 25px;
+      background-color: white;
+      color: black;
+    }
+  }
 
   .section-a-card {
     padding: 15px;
@@ -46,6 +72,10 @@
     box-shadow: -9px 13px 28px -6px rgba(0, 0, 0, 0.44);
     -webkit-box-shadow: -9px 13px 28px -6px rgba(0, 0, 0, 0.44);
     -moz-box-shadow: -9px 13px 28px -6px rgba(0, 0, 0, 0.44);
+
+    h2 {
+      font-weight: 700;
+    }
   }
 }
 

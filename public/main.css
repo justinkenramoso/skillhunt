@@ -18,10 +18,10 @@ footer {
   padding: 50px;
 }
 #home-landing #landing-text {
-  font-weight: 700;
   color: white;
   font-size: 3rem;
   text-shadow: -2px 0px 13px rgb(0, 0, 0);
+  font-family: "Alfa Slab One", cursive;
 }
 #home-landing #landing-subtext {
   display: inline-block;
@@ -41,11 +41,32 @@ footer {
 @media screen and (max-width: 767px) {
   #home-landing {
     padding: 20px;
+    text-align: center;
+  }
+  #home-landing #landing-div #landing-text {
+    font-size: 2rem;
   }
 }
 #section-a {
   min-height: 100vh;
-  border-top: 10px solid black;
+  padding-top: 50px;
+}
+#section-a #section-a-header {
+  padding-top: 50px;
+  margin-bottom: 50px;
+  height: 10vh;
+  text-align: center;
+  color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Alfa Slab One", cursive;
+}
+#section-a #section-a-header h2 {
+  padding: 15px 50px;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
 }
 #section-a .section-a-card {
   padding: 15px;
@@ -55,6 +76,9 @@ footer {
   box-shadow: -9px 13px 28px -6px rgba(0, 0, 0, 0.44);
   -webkit-box-shadow: -9px 13px 28px -6px rgba(0, 0, 0, 0.44);
   -moz-box-shadow: -9px 13px 28px -6px rgba(0, 0, 0, 0.44);
+}
+#section-a .section-a-card h2 {
+  font-weight: 700;
 }
 
 .img-hover-zoom {
@@ -128,6 +152,20 @@ footer {
 * {
   box-sizing: border-box;
   margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body {
+  font-family: "Lato", sans-serif;
 }
 
 .top-padding {
