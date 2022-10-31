@@ -1,11 +1,13 @@
 import React from "react";
 // Images
+import bg from "../images/bits.svg";
 import team from "../images/team.svg";
 import build from "../images/build.svg";
 import teach from "../images/teach.svg";
 import mobileDev from "../images/mobile-dev.jpg";
 import devTeam from "../images/dev-team.jpg";
-import bg from "../images/bits.svg";
+import ui from "../images/ui.jpg";
+
 // Material UI
 import { Button, styled } from "@mui/material";
 // Router
@@ -57,13 +59,13 @@ function Home() {
       </div>
       {/* Section A-----------------------------------------------> */}
       <div id="section-a" style={{ backgroundImage: `url(${bg})` }}>
-        <div id="section-a-header">
+        <div className="section-a-header">
           <h2>
             WHY <span className="color1">SKILLHUNT</span> ?
           </h2>
         </div>
         <div className="row w-100 m-0">
-          {/* Trained Professionals-------------- */}
+          {/* Quality Driven-------------- */}
           <div className="col-md-6 order-md-0">
             <div className="p-5 centered-flex">
               <div className="img-hover-zoom img-hover-zoom--xyz">
@@ -74,7 +76,7 @@ function Home() {
           <div className="col-md-6 centered-flex px-md-5 py-3 order-md-1 ps-md-0">
             <div className="section-a-card m-lg-5">
               <h2>
-                Trained <span className="color1">Professionals</span>
+                <span className="color1">Quality</span> Driven
               </h2>
               <hr />
               <p>
@@ -139,6 +141,19 @@ function Home() {
                 Obcaecati, nihil ex, a velit labore ratione dolorum porro hic
                 placeat beatae blanditiis est voluptatibus maiores dicta!
               </p>
+            </div>
+          </div>
+        </div>
+        <div className="section-a-header">
+          <h2>
+            OUR <span className="color1">SOLUTIONS</span>
+          </h2>
+        </div>
+        <div id="solutions">
+          <div className="solutions-container">
+            <h3>UI/UX Design</h3>
+            <div className="solutions-flex">
+              <img src={ui} alt="" />
             </div>
           </div>
         </div>

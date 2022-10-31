@@ -16,9 +16,8 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledLink = styled(Link)`
-  color: black;
+  color: white;
   text-decoration: none;
-  font-weight: 500;
   margin: 1rem;
   position: relative;
   &:hover {
@@ -34,7 +33,7 @@ const StyledLink2 = styled(Link)`
   text-decoration: none;
   font-weight: 500;
   &:hover {
-    color: black;
+    color: white;
   }
 `;
 

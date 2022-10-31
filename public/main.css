@@ -51,7 +51,7 @@ footer {
   min-height: 100vh;
   padding-top: 50px;
 }
-#section-a #section-a-header {
+#section-a .section-a-header {
   padding-top: 50px;
   margin-bottom: 50px;
   height: 10vh;
@@ -62,7 +62,7 @@ footer {
   align-items: center;
   font-family: "Alfa Slab One", cursive;
 }
-#section-a #section-a-header h2 {
+#section-a .section-a-header h2 {
   padding: 15px 50px;
   border-radius: 25px;
   background-color: white;
@@ -80,6 +80,33 @@ footer {
 #section-a .section-a-card h2 {
   font-weight: 700;
 }
+#section-a #solutions {
+  min-height: 100vh;
+  padding: 50px;
+}
+#section-a #solutions .solutions-container {
+  border: 5px solid white;
+  border-radius: 10px;
+  background-color: #b2b2b2;
+}
+#section-a #solutions .solutions-container h3 {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: -1.5rem;
+  margin-left: 50px;
+  background-color: white;
+  width: 200px;
+  font-weight: 700;
+}
+#section-a #solutions .solutions-container .solutions-flex {
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
+}
+#section-a #solutions .solutions-container .solutions-flex img {
+  width: 500px;
+}
 
 .img-hover-zoom {
   height: 400px;
@@ -88,7 +115,7 @@ footer {
   border-radius: 10px;
   padding: 20px;
   width: 400px;
-  background-color: #3c4048;
+  background-color: #00abb3;
   display: flex;
   justify-content: center;
   align-items: center;
