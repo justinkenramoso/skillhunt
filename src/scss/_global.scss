@@ -36,6 +36,13 @@
   background-color: $color4;
 }
 
+// Centered Flex
+.centered-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
