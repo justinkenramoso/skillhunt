@@ -1,11 +1,16 @@
 import React from "react";
 import PortfolioCard from "../components/PortfolioCard.js";
+import bg from "../images//backgrounds/bits.svg";
 
 const Talent = () => {
   return (
     <div id="talent">
       <div id="talent-row" className="row w-100 pt-2">
-        <div id="sidebar-specs" className="col-md-2">
+        <div
+          id="sidebar-specs"
+          className="col-md-2"
+          style={{ backgroundImage: `url(${bg})` }}
+        >
           Column
         </div>
         <div
@@ -24,7 +29,11 @@ const Talent = () => {
             <PortfolioCard />
           </div>
         </div>
-        <div id="sidebar-filler" className="col-md-2">
+        <div
+          id="sidebar-filler"
+          className="col-md-2"
+          style={{ backgroundImage: `url(${bg})` }}
+        >
           Column
         </div>
       </div>

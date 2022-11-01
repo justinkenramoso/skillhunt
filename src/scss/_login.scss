@@ -1,6 +1,26 @@
 @import "variables";
-.login {
-  min-height: 90vh;
+#login {
+  min-height: 92vh;
   background-color: $color4;
   padding-top: 50px;
+  overflow-x: hidden;
+
+  #login-form {
+    margin: auto;
+    width: 60%;
+  }
+  @media screen and (max-width: 767px) {
+    #login-form {
+      width: 90%;
+    }
+  }
+  #login-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin: 50px;
+      width: 600px;
+    }
+  }
 }

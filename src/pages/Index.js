@@ -16,12 +16,12 @@ const Index = () => {
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/talent" element={<Talent />} />
-        <Route exact path="/careers" element={<Careers />} />
-        <Route exact path="/company" element={<Company />} />
-        <Route exact path="/contactUs" element={<ContactUs />} />
-        <Route exact path="/logIn" element={<LogIn />} />
-        <Route exact path="/register" element={<Register />} />
+        <Route path="/talent" element={<Talent />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/company" element={<Company />} />
+        <Route path="/contactUs" element={<ContactUs />} />
+        <Route path="/logIn" element={<LogIn />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       <Footer />
     </Router>

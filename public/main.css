@@ -85,9 +85,11 @@ footer {
   padding: 50px;
 }
 #section-a #solutions .solutions-container {
-  border: 5px solid white;
+  border: 2px solid white;
   border-radius: 10px;
-  background-color: #b2b2b2;
+  background-size: cover;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 #section-a #solutions .solutions-container h3 {
   padding: 10px;
@@ -96,16 +98,45 @@ footer {
   margin-top: -1.5rem;
   margin-left: 50px;
   background-color: white;
-  width: 200px;
+  width: 300px;
   font-weight: 700;
 }
-#section-a #solutions .solutions-container .solutions-flex {
-  display: flex;
-  justify-content: flex-end;
-  background-color: white;
+@media screen and (max-width: 767px) {
+  #section-a #solutions .solutions-container h3 {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-#section-a #solutions .solutions-container .solutions-flex img {
-  width: 500px;
+#section-a #solutions .solutions-container .solutions-paper {
+  margin: 10px 20px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  display: block;
+}
+#section-a #solutions .solutions-container .solutions-paper h5 {
+  text-align: center;
+  font-weight: bold;
+}
+#section-a #solutions .solutions-container .solutions-img {
+  width: 100%;
+  border-radius: 10px;
+}
+@media screen and (max-width: 767px) {
+  #section-a #solutions {
+    padding: 10px;
+  }
+}
+#section-a #partners #partners-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#section-a #partners #partners-flex img {
+  border-radius: 20px;
+  background-color: white;
+  width: 300px;
 }
 
 .img-hover-zoom {
@@ -133,6 +164,77 @@ footer {
   box-shadow: 0px 0px 13px 5px #eaeaea;
   -webkit-box-shadow: 0px 0px 13px 5px #eaeaea;
   -moz-box-shadow: 0px 0px 13px 5px #eaeaea;
+}
+
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #3c4048;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.hvr-sweep-to-right:hover,
+.hvr-sweep-to-right:focus,
+.hvr-sweep-to-right:active {
+  color: white;
+}
+
+.hvr-sweep-to-right:hover:before,
+.hvr-sweep-to-right:focus:before,
+.hvr-sweep-to-right:active:before {
+  transform: scaleX(1);
+}
+
+.hvr-reveal {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-reveal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-color: #3c4048;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 0;
+  transition-property: border-width;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out;
+}
+
+.hvr-reveal:hover:before,
+.hvr-reveal:focus:before,
+.hvr-reveal:active:before {
+  transform: translateY(0);
+  border-width: 4px;
 }
 
 #talent {
@@ -170,10 +272,29 @@ footer {
   min-height: 100vh;
 }
 
-.login {
-  min-height: 90vh;
+#login {
+  min-height: 92vh;
   background-color: #eaeaea;
   padding-top: 50px;
+  overflow-x: hidden;
+}
+#login #login-form {
+  margin: auto;
+  width: 60%;
+}
+@media screen and (max-width: 767px) {
+  #login #login-form {
+    width: 90%;
+  }
+}
+#login #login-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login #login-left img {
+  margin: 50px;
+  width: 600px;
 }
 
 * {
@@ -185,14 +306,15 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  font-family: "Lato", sans-serif;
 }
 
+html,
 body {
-  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
 
 .top-padding {

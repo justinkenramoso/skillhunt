@@ -1,15 +1,24 @@
 import React from "react";
-// Images
-import bg from "../images/bits.svg";
-import team from "../images/team.svg";
-import build from "../images/build.svg";
-import teach from "../images/teach.svg";
-import mobileDev from "../images/mobile-dev.jpg";
-import devTeam from "../images/dev-team.jpg";
-import ui from "../images/ui.jpg";
+// BG
+import devTeam from "../images/backgrounds/dev-team.jpg";
+import bg from "../images//backgrounds/bits.svg";
+// Why Us
+import team from "../images/whuys/team.svg";
+import build from "../images/whuys/build.svg";
+import teach from "../images/whuys/teach.svg";
+// Solutions
+import Solution from "../components/Solution";
+import ui from "../images/solutions/ui.jpg";
+import frontend from "../images/solutions/frontend.jpg";
+import mobile from "../images/solutions/mobile-dev.jpg";
+import backend from "../images/solutions/backend.jpg";
+// Partners
+import innovatora from "../images/partners/innovatora.png";
+import pns from "../images/partners/pns.png";
+import webifier from "../images/partners/webifier.png";
 
 // Material UI
-import { Button, styled } from "@mui/material";
+import { Button } from "@mui/material";
 // Router
 import { Link } from "react-router-dom";
 
@@ -144,17 +153,87 @@ function Home() {
             </div>
           </div>
         </div>
+        {/* Solutions -----------------------------------> */}
+        <hr className="color4" />
         <div className="section-a-header">
           <h2>
             OUR <span className="color1">SOLUTIONS</span>
           </h2>
         </div>
+        {/* Carousel */}
         <div id="solutions">
-          <div className="solutions-container">
-            <h3>UI/UX Design</h3>
-            <div className="solutions-flex">
-              <img src={ui} alt="" />
+          <div
+            id="carouselExampleControls"
+            className="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div className="carousel-inner">
+              <div className="carousel-item active" data-bs-interval="false">
+                <Solution
+                  title="UI/UX Design"
+                  primary="USER-CENTRIC-DESIGN WITH AWE-INSPIRING AESTHETICS"
+                  secondary="Our lean UX/UI design methodology allows us to hyperfocus on our end-users, and identify what truly matters to them. We take it further by integrating data into our design process, synthesizing each data point to give us a clear picture of how the users behave. As a result, we create a masterpiece that is both beautiful and delightful to use."
+                  img={ui}
+                />
+              </div>
+              <div className="carousel-item" data-bs-interval="false">
+                <Solution
+                  title="Mobile Development"
+                  primary="WORLD-CLASS MOBILE APPS THAT SET TRENDS"
+                  secondary="Our mobile apps are engineered to be extremely reliable even in the face of millions of users. To be able to achieve this, we use native app development - the uncontested choice for high-performance apps. This allows us to take full advantage of the operating systems' features. By going deep into the hardware (GPS, camera, CPU, etc.) we ensure that our mobile apps are fastest in execution, ultimately resulting in the best user experience."
+                  img={mobile}
+                />
+              </div>
+              <div className="carousel-item" data-bs-interval="false">
+                <Solution
+                  title="Web Development"
+                  primary="WEB APPS ENGINEERED TO EXCEED EXPECTATIONS."
+                  secondary="Simply put, our website apps stand out from the rest. In terms of speed, performance, design, and functionality, we make sure that our web app is as indistinguishable as possible from its native counterpart. We face technical impossibilities head-on and push the boundaries on what is possible."
+                  img={frontend}
+                />
+              </div>
+              <div className="carousel-item" data-bs-interval="false">
+                <Solution
+                  title="Backend Development"
+                  primary="SECURE. EFFICIENT. SCALABLE."
+                  secondary="Security lies at the heart of our development. We employ the industry’s best practices with strict compliance at the highest level security standards used by the banks and the military. Efficiency and scalability sits at the core of our software engineering process, making sure state-of-the-art technologies are used where applicable."
+                  img={backend}
+                />
+              </div>
             </div>
+            <button
+              className="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span className="carousel-control-prev-icon d-none d-md-inline"></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span className="carousel-control-next-icon d-none d-md-inline"></span>
+              <span className="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        {/* Partners ------------------------------------------> */}
+        <hr className="color4" />
+        <div className="section-a-header">
+          <h2>
+            <span className="color1">PARTNER</span> COMPANIES
+          </h2>
+        </div>
+        {/* Partners Flexbox --------------------------------------> */}
+        <div id="partners" className="p-2 p-md-5">
+          <div id="partners-flex">
+            <img className="my-3 my-md-0" src={innovatora} alt="" />
+            <img className="my-3 my-md-0" src={pns} alt="" />
+            <img className="my-3 my-md-0" src={webifier} alt="" />
           </div>
         </div>
       </div>

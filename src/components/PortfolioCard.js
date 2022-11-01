@@ -1,5 +1,5 @@
 import React from "react";
-import avatarMale from "../images/avatar-male.svg";
+import avatarMale from "../images/portfolios/avatar-male.svg";
 import { Button } from "@mui/material";
 
 const PortfolioCard = () => {

@@ -1,7 +1,6 @@
 import { TextField, FormHelperText } from "@mui/material";
 import Paper from "@mui/material/Paper";
 import Button from "@mui/material/Button";
-import Autocomplete from "@mui/material/Autocomplete";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
@@ -9,13 +8,17 @@ import "@fontsource/roboto/700.css";
 import styled from "styled-components";
 import React, { useState, useEffect, useRef } from "react";
 import { getStorage, setStorage } from "../data/LocalStorage";
+import bits from "../images/backgrounds/bits.svg";
+import { Link } from "react-router-dom";
 
 const StyledForm = styled.div`
-  padding-top: 5vh;
+  padding-top: 8vh;
   padding-bottom: 5vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
 `;
 
 //Debouncing
@@ -144,7 +147,7 @@ export default function Register() {
   };
 
   return (
-    <StyledForm>
+    <StyledForm style={{ backgroundImage: `url(${bits})` }}>
       <Paper elevation={6} sx={{ borderRadius: "20px", padding: "0 20px" }}>
         <form className="p-3" onSubmit={handleSubmit} ref={formRef}>
           <h3>Create Account</h3>
@@ -294,9 +297,11 @@ export default function Register() {
               </Button>
             </div>
             <div className="col-12 my-2">
-              <Button fullWidth variant="outlined">
-                Sign In Instead
-              </Button>
+              <Link to="/login" style={{ textDecoration: "none" }}>
+                <Button fullWidth variant="outlined">
+                  Sign In Instead
+                </Button>
+              </Link>
             </div>
           </div>
         </form>

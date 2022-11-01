@@ -8,13 +8,14 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-}
-body {
   font-family: $lato;
+}
+html,
+body {
+  overflow-x: hidden;
 }
 .top-padding {
   padding-top: 5vh;
