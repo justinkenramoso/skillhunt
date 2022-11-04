@@ -4,6 +4,9 @@
   height: 92vh;
   background-color: $color4;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 50px;
 
   #landing-text {
@@ -90,14 +93,14 @@
       margin: 0 auto;
 
       h3 {
+        font-family: $alfa;
         padding: 10px;
         border-radius: 10px;
         text-align: center;
         margin-top: -1.5rem;
         margin-left: 50px;
         background-color: white;
-        width: 300px;
-        font-weight: 700;
+        width: 400px;
       }
 
       @media screen and (max-width: 767px) {

@@ -15,6 +15,9 @@ footer {
   height: 92vh;
   background-color: #eaeaea;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 50px;
 }
 #home-landing #landing-text {
@@ -92,14 +95,14 @@ footer {
   margin: 0 auto;
 }
 #section-a #solutions .solutions-container h3 {
+  font-family: "Alfa Slab One", cursive;
   padding: 10px;
   border-radius: 10px;
   text-align: center;
   margin-top: -1.5rem;
   margin-left: 50px;
   background-color: white;
-  width: 300px;
-  font-weight: 700;
+  width: 400px;
 }
 @media screen and (max-width: 767px) {
   #section-a #solutions .solutions-container h3 {
@@ -268,8 +271,91 @@ footer {
   background-color: #b2b2b2;
 }
 
+#careers {
+  padding-top: 25px;
+}
+#careers #careers-header-div {
+  padding-top: 50px;
+  height: 10vh;
+  text-align: center;
+  color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Alfa Slab One", cursive;
+}
+#careers #careers-header-div #careers-header {
+  padding: 15px 50px;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+}
+#careers .job-container {
+  height: 100%;
+}
+
 .company {
   min-height: 100vh;
+}
+
+#about-us-header-div {
+  padding-top: 50px;
+  margin-bottom: 50px;
+  height: 10vh;
+  text-align: center;
+  color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Alfa Slab One", cursive;
+}
+#about-us-header-div #about-us-header {
+  padding: 15px 50px;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+}
+
+.parallax {
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  border: 5px solid #00abb3;
+}
+
+.parallax-text {
+  max-width: 75%;
+  text-align: center;
+  margin: 25px auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+#contact {
+  min-height: 92vh;
+}
+#contact #contact-form {
+  width: 50%;
+  margin: auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+#contact #contact-form h2 {
+  font-family: "Alfa Slab One", cursive;
+}
+#contact #contact-form img {
+  margin-top: 20px;
+  width: 50%;
+}
+@media screen and (max-width: 767px) {
+  #contact #contact-form {
+    width: 80%;
+  }
 }
 
 #login {
@@ -295,6 +381,10 @@ footer {
 #login #login-left img {
   margin: 50px;
   width: 600px;
+}
+
+.login-header {
+  font-family: "Alfa Slab One", cursive;
 }
 
 * {

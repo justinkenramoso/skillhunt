@@ -27,7 +27,9 @@ export default function LogIn() {
         <div id="login-form">
           <Paper elevation={6} sx={{ borderRadius: "20px", padding: "0 10px" }}>
             <div className="p-3">
-              <h3>Sign In</h3>
+              <h3 className="login-header">
+                Sign <span className="color1">In</span>
+              </h3>
               <div className="my-3">
                 <TextField
                   fullWidth
@@ -44,11 +46,6 @@ export default function LogIn() {
                   label="Password"
                   type="password"
                 />
-              </div>
-              <div className="mt-1 ms-1">
-                <Link href="#" underline="hover">
-                  {"Forgot password?"}
-                </Link>
               </div>
               <div className="row mt-3 p-3">
                 <div className="col-12 my-2">

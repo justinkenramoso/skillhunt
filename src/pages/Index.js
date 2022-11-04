@@ -9,10 +9,12 @@ import Company from "./Company";
 import ContactUs from "./ContactUs";
 import LogIn from "./LogIn";
 import Register from "./Register";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Index = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />

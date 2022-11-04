@@ -150,7 +150,9 @@ export default function Register() {
     <StyledForm style={{ backgroundImage: `url(${bits})` }}>
       <Paper elevation={6} sx={{ borderRadius: "20px", padding: "0 20px" }}>
         <form className="p-3" onSubmit={handleSubmit} ref={formRef}>
-          <h3>Create Account</h3>
+          <h3 className="login-header">
+            Create <span className="color1">Account</span>
+          </h3>
           <div className="row mt-4">
             <div className="col">
               <TextField

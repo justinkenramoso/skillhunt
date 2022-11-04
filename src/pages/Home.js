@@ -16,7 +16,6 @@ import backend from "../images/solutions/backend.jpg";
 import innovatora from "../images/partners/innovatora.png";
 import pns from "../images/partners/pns.png";
 import webifier from "../images/partners/webifier.png";
-
 // Material UI
 import { Button } from "@mui/material";
 // Router

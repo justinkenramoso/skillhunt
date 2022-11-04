@@ -1,3 +1,42 @@
+@import "variables";
+
 .company {
   min-height: 100vh;
+}
+
+#about-us-header-div {
+  padding-top: 50px;
+  margin-bottom: 50px;
+  height: 10vh;
+  text-align: center;
+  color: $color4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $alfa;
+
+  #about-us-header {
+    padding: 15px 50px;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+  }
+}
+
+.parallax {
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  border: 5px solid $color1;
+}
+.parallax-text {
+  max-width: 75%;
+  text-align: center;
+  margin: 25px auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
 }

@@ -1,1 +1,27 @@
 @import "variables";
+
+#careers {
+  padding-top: 25px;
+
+  #careers-header-div {
+    padding-top: 50px;
+    height: 10vh;
+    text-align: center;
+    color: $color4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $alfa;
+
+    #careers-header {
+      padding: 15px 50px;
+      border-radius: 25px;
+      background-color: white;
+      color: black;
+    }
+  }
+
+  .job-container {
+    height: 100%;
+  }
+}
