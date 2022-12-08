@@ -12,7 +12,7 @@ footer {
 }
 
 #home-landing {
-  height: 92vh;
+  min-height: 92vh;
   background-color: #eaeaea;
   background-size: cover;
   background-attachment: fixed;
@@ -259,10 +259,13 @@ footer {
   padding-top: 20px;
 }
 #talent #talent-row #portfolios #portfolios-header-div #portfolios-header-text {
-  font-weight: 700;
+  font-family: "Alfa Slab One", cursive;
   color: #3c4048;
-  font-size: 3rem;
   text-decoration: underline;
+  padding: 15px 50px;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
 }
 #talent #talent-row #portfolios #portfolio-cards {
   padding: 50px;

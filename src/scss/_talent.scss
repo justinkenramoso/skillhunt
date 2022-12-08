@@ -19,10 +19,13 @@
         padding-top: 20px;
 
         #portfolios-header-text {
-          font-weight: 700;
+          font-family: $alfa;
           color: $color2;
-          font-size: 3rem;
           text-decoration: underline;
+          padding: 15px 50px;
+          border-radius: 25px;
+          background-color: white;
+          color: black;
         }
       }
       #portfolio-cards {

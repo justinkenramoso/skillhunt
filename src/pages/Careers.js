@@ -7,7 +7,7 @@ const Careers = () => {
     <div style={{ backgroundImage: `url(${bg})` }} id="careers">
       <div id="careers-header-div">
         <h3 id="careers-header">
-          Find a <span className="color1">Job</span>
+          FIND A <span className="color1">JOB</span>
         </h3>
       </div>
       <Jobs />
